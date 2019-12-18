@@ -7,4 +7,4 @@ before_install:
 
 # Commands the need to be executed to run out test suite
 script:
-    - docker run danielsdockerthing/docker-react npm run test -- --coverage
+    - docker run -e CI=true danielsdockerthing/docker-react npm run test
